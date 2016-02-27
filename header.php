@@ -1,6 +1,6 @@
-<div id="logo">
+<a id="logo" href="index.php">
     Logotype
-</div>
+</a>
 <div id="site_header">
     <a class="menu_button" href="index.php?page=1">
         О нас

@@ -1,7 +1,7 @@
 #footer {
     background-color: #353b39;
-    width: 100%;
-    padding: 3px 0px 3px 10px;
+    width: calc(100%-20px);
+    padding: 3px 10px 3px 10px;
     text-align: left;
     color: #ffffff;
 }
