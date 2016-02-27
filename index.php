@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="car_specifications_page.css">  
-    <title>Альфа версия</title>
+    <title>Предварительная версия</title>
 </head>
 <body id="page">
     <?php 
