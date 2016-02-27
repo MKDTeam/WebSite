@@ -1,0 +1,92 @@
+.Content {
+	border: 0.1px solid #353b39;
+    border-left: 4px solid #353b39; 
+    border-right: 4px solid #353b39;
+    margin: 0 10% 0 10%;
+    min-height: 100vh;
+    text-align: left;
+}
+#Header{ /*parent: Description*/
+	padding: 10px;
+	width: 98%;
+	margin: 2% 1% 1% 1%;
+	text-align: left;
+	font-size: 20pt;
+	font-weight: bold;
+}
+#Overview{
+	width: 27%;
+	margin: 1% 1% 1% 2%;
+	display: inline-block;
+}
+#MainImage{ /*parent: Overview*/
+	background-color: #353b39;
+	border: 2px solid #353b39;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.8);
+	width: 96%;
+	margin: 2%;
+	margin-bottom: 0;
+}
+#AdditionalImages{ /*parent: Overview*/
+	background-color: #353b39;
+	border: 2px solid #353b39;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.8);
+	height: 8%;
+	width: 96%;
+	margin: 2%;
+	margin-top: 0;
+}
+#Description{
+	width: 65%;
+	margin: 1% 2% 1% 1%;
+	font-size: 14pt;
+	padding: 2pt;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+#ShortDescription{ /*parent: Description*/
+	background-color: white;
+	width: 98%;
+	margin: 1%;
+	font-size: 14pt;
+	padding: 2pt;
+	position: relative;
+}
+#ShowFullDescription{
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	color: #3f7fbf;
+	text-decoration: underline;
+	padding: 2pt;
+	padding-left: 40px;
+	width: 66%;
+	display: block;
+	transition-duration: 0.3s;
+}
+#ShowFullDescription:hover{
+	color: #ff4d00;
+	cursor: pointer;
+}
+#ShowFullDescription:active{
+	color: white;
+}
+#ShowFullDescription:active ~ #FullDescription{
+	display: block;
+}
+#FullDescription{ /*parent: Description*/
+	background-color: white;
+	width: 96%;
+	margin: 1%;
+	font-size: 14pt;
+	padding: 1%;
+	display: none;
+	overflow: none;
+}
+#Characteristics{
+	width: 96%;
+	margin: 1% 2% 1% 2%;
+	min-height: 300px;
+	display: block;
+}

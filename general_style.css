@@ -1,0 +1,36 @@
+#page { 
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-width: 1200px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 3px solid #353b39;
+	margin: 10px;
+}
+tr {
+	border-bottom: 3px solid #353b39;
+}
+td {
+	padding: 10px;
+}
+th {
+	padding: 10px;
+	text-align: left;
+}
+tr.head {
+	background-color: #3f7fbf;
+	border: 3px solid #3f7fbf;
+}
+tr.head td {
+	color: #ffffff;
+	font-weight: bold;
+	text-shadow: 0 0 8px #353b39;
+	border: none;
+	margin: none;
+
+}
