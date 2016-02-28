@@ -6,7 +6,7 @@
         О нас
     </a>
     <a class="menu_button" href="index.php?page=1">
-        Магазин
+        Сделать заказ
         <ul class="hiden_list">
             <li class="hiden_list_item">Первый пункт меню</li>
             <li class="hiden_list_item">Второй пункт меню</li>
