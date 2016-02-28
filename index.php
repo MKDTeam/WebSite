@@ -12,6 +12,9 @@
     <?php 
     require('header.php');
     switch ($_GET['page']) {
+        case 'info':
+            require('info.php');
+            break;
         case 1:
             require('car_specifications_page.php');
             break;
@@ -19,7 +22,7 @@
             require('car_specifications_2_page.php');
             break;
         default:
-            require('car_specifications_page.php');
+            require('info.php');
             break;
     }
     require('footer.php');
