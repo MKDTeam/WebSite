@@ -14,10 +14,10 @@
             <li class="hiden_list_item">Четверты пункт меню</li>
         </ul>
     </a>
-    <a class="menu_button" href="index.php?page=2">
-        Условия доставки
+    <a class="menu_button" href="index.php?page=ord">
+        Сделать заказ 
     </a>
-    <a class="menu_button">
+    <a class="menu_button" href="index.php?page=2" >
         Отзывы
     </a>
     <a class="menu_button">
