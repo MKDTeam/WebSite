@@ -8,3 +8,4 @@
 <p><input type="submit" value="Отправить">
    <input type="reset" value="Очистить"></p>
  </form>
+</div>
