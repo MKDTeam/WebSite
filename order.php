@@ -27,19 +27,18 @@
 
 	$message = "
 	<html>
-	    <head>
-	        <title>Birthday Reminders for August</title>
-	    </head>
 	    <body>
-	        <p>Here are the birthdays upcoming in August!</p>
-	        <p> $comment </p>
-    		<p> $mail </p>
-    		<p> $phonenumber </p>
+	        <p> Данное письмо сгенерировано автоматически.
+	        <p> На вашем сайте во вкладке \"Сделать заказ\" оставлен запрос следующего содержания:
+	        <p> \"$comment\"
+	        <p>
+    		<p> Телефонный номер заказчика: $phonenumber </p>
+    		<p> Почта заказчика: $mail </p>
 	    </body>
 	</html>";
 
-	$headers  = "Content-type: text/html; charset=charset=utf-8 \r\n";
+	$headers  = "Content-type: text/html; charset=charset=utf-8" . "\r\n";
+	$headers .= "From: $mail" . "\r\n";
 
 	mail($to, $subject, $message, $headers);
-	echo("Complite");
 ?>
