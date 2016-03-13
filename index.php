@@ -4,7 +4,8 @@
     <link rel="stylesheet" type="text/css" href="general_style.css">
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
-    <link rel="stylesheet" type="text/css" href="car_specifications_page.css">  
+    <link rel="stylesheet" type="text/css" href="car_specifications_page.css">
+    <link rel="stylesheet" type="text/css" href="order.css">    
     <title>Предварительная версия</title>
 </head>
 <body id="page">
@@ -20,7 +21,7 @@
         case 2:
             require('car_specifications_2_page.php');
             break;   
-        case ord:
+        case order:
             require('order.php');
             break;
         default:

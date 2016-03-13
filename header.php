@@ -14,7 +14,7 @@
             <li class="hiden_list_item">Четверты пункт меню</li>
         </ul>
     </a>
-    <a class="menu_button" href="index.php?page=ord">
+    <a class="menu_button" href="index.php?page=order">
         Сделать заказ 
     </a>
     <a class="menu_button" href="index.php?page=2" >
