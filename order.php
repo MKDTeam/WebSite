@@ -8,16 +8,16 @@
 		<textarea id="Comment" name="comment" autofocus="true" rows="12"></textarea>
 		<p>
 			<b>Ваш email:</b>
-			<input class="field" name="mail" type="email" size="30" required >
+			<input class="field" name="mail" type="email" size="30" autocomplete="on" required="Пожалуйста, заполните это поле" >
 			<b>Ваш телефон:</b>
-			<input class="field" name="phonenumber" type="text" size="30" maxlength="11" pattern="[0-9]{11}" required >
+			<input class="field" name="phonenumber" type="text" size="30" maxlength="11" pattern="[0-9]{11}" autocomplete="on" required="Пожалуйста, заполните это поле" >
 		</p>
 		<p><input id="submit_button" name="send" type="submit" value="Отправить"></p>
 	</form>
 </div>
 
 <?php
-    $to  = "suxah@walkmail.ru";
+    $to  = "8230001@inbox.ru";
 
 	$subject = "Заказ на доставку деталей";
 
