@@ -40,5 +40,5 @@
 	$headers  = "Content-type: text/html; charset=charset=utf-8" . "\r\n";
 	$headers .= "From: $mail" . "\r\n";
 
-	mail($to, $subject, $message, $headers);
+    mail($to, $subject, $message, $headers);
 ?>
