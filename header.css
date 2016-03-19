@@ -5,21 +5,19 @@
     font-size: 40pt;
     font-weight: bolder;
     text-decoration: none;
-    color: black;
-    background-color: #ffffff;
+    background-color: #1588CD;
+    display: inline-block;
 }
 
 #site_header {
     background-color: #1588CD;
-    padding: 5px 0px 5px 5px;
     width: 1200px;
     margin-left: calc((100vw - 1200px)/2);
-    display: block;
-    position: static;
-    text-align: center;
+    position: relative;
+    text-align: left;
 }
 a.menu_button {
-    width: 16%; 
+    width: 100px; 
     margin: 5px 15px 5px 20px;
     padding: 5px 10px; 
     text-align: center;

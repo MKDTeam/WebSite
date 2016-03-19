@@ -1,7 +1,8 @@
-<a id="logo" href="index.php">
-    Logotype
-</a>
+
 <div id="site_header">
+    <a id="logo" href="index.php">
+        <img src="g4146.png" style="height: 60px" />
+    </a>
     <a class="menu_button" href="index.php?page=info">
         Главная
     </a>
