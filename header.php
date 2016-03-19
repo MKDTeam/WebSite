@@ -2,7 +2,7 @@
     Logotype
 </a>
 <div id="site_header">
-       <a class="menu_button" href="index.php?page=info">
+    <a class="menu_button" href="index.php?page=info">
         Главная
     </a>
     <a class="menu_button" href="index.php?page=order">
@@ -14,5 +14,4 @@
         <a class="menu_button" href="index.php?page=info">
         О нас
     </a>
-
 </div>
