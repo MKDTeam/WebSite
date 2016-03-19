@@ -2,12 +2,12 @@
 	border: 0.1px solid #353b39;
     border-left: 4px solid #353b39; 
     border-right: 4px solid #353b39;
-    width: 1000px;
-    margin-left: calc((100vw - 1040px)/2);
+    width: 1112px;
+    margin-left: calc((100vw - 1200px)/2);
     min-height: 100vh;
     text-align: left;
-    padding: 20px;
-    background-color: rgba(255,255,255,1);
+    padding: 40px;
+    background-color: rgba(215,217,215,0.95);
 }
 #Header{ /*parent: Description*/
 	padding: 10px;

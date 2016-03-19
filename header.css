@@ -1,14 +1,14 @@
 #logo {
     display: block;
     position: static;
-    background-color: #1588CD;
+    background-color: #731f1f;
     display: inline-block;
     border: none;
     margin: 5px;
 }
 
 #site_header {
-    background-color: #1588CD;
+    background-color: #731f1f;
     width: 1200px;
     margin-left: calc((100vw - 1200px)/2);
     position: relative;
@@ -22,16 +22,16 @@ a.menu_button {
     font-size: 20pt;
     display: inline;
     vertical-align: 70%;
-
+    margin-left: 50px;
     text-decoration: none;
-    color: black;
+    color: white;
     position: relative;
-    text-shadow: 0 0 8px #ffffff;
+    text-shadow: 0 0 12px #3c5659;
 }
 a.menu_button:hover {
-    background-color: #353b39;
+    background-color: white;
     border-color:  #ffffff;
-    color: #ffffff;
+    color: #731f1f;
 }
 
 a.menu_button ul.hiden_list{
