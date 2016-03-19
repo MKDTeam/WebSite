@@ -5,6 +5,9 @@
     width: 100vw;
     min-width: 1200px;
     text-align: center;
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-size: 100vw auto;
 }
 img {
 	background-color: #353b39;
