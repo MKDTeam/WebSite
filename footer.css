@@ -1,6 +1,8 @@
 #footer {
     background-color: #353b39;
-    width: calc(100%-20px);
+    width: 100vw;
+    max-width: 1175px;
+    min-width: 915px;
     padding: 3px 10px 3px 10px;
     text-align: right;
     color: #ffffff;
