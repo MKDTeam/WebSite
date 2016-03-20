@@ -4,7 +4,7 @@
 	</div>
 	<p>Здесь вы можете составить заказ.
 	<p>Введите данные о деталях которые хотите заказать в поле ниже:
-	<form action="index.php?page=order" method="post" name="textarea">
+	<form action="index.php?page=order" method="POST" name="textarea">
 		<textarea id="Comment" name="comment" autofocus="true" rows="12"></textarea>
 		<p>
 			<b>Ваш email:</b>
@@ -41,4 +41,5 @@
 	$headers .= "From: $mail" . "\r\n";
 
     mail($to, $subject, $message, $headers);
+
 ?>
