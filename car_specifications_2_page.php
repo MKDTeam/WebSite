@@ -5,7 +5,7 @@
 
 	<div id="Overview">
 		<div id="MainImage">
-			<img src="image_2.jpg" style="width: 100%" />
+			<img src="img/image_2.jpg" style="width: 100%" />
 		</div>
 	</div>
 
