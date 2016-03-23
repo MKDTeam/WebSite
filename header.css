@@ -1,5 +1,6 @@
 #main_description {
     width: 1200px;
+    height: 300px;
     border: none;
     box-shadow: none;
 }
@@ -18,7 +19,7 @@
     text-align: left;
 }
 img.graphic_description {
-    height: 446px;
+    height: 300px;
     border: none;
     box-shadow: none;
     position: absolute;
