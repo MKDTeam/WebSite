@@ -46,7 +46,7 @@ auto();
 
     <!--<img id="main_description" src="img/description.png"> -->
     <a href="index.php">
-        <img id="logo" src="img/logo.svg" style="height: 60px" />
+        <img id="logo" src="img/logo.png"/>
     </a>
 
     <a class="menu_button" href="index.php?page=info">

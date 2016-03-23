@@ -1,45 +1,51 @@
 #main_description {
-    width: 1200px;
-    height: 300px;
+    width: 1192px;
+    height: 296px;
     border: none;
     box-shadow: none;
 }
 #logo {
-    display: block;
-    background-color: #731f1f;
+    background-color: #ffffff;
     display: inline-block;
     border: none;
-    margin: 5px;
-    margin-right: 50px;
+    border-top: 4px solid #ffffff;
+    border-left: 4px solid #731f1f;
+    padding: 5px 25px;
+    height: 70px;
+    text-shadow: 0 0 12px #3c5659;
 }
 #site_header {
     background-color: #731f1f;
     width: 1200px;
     margin-left: calc((100vw - 1200px)/2);
+    padding: none;
     text-align: left;
 }
-.graphic_description {
+img.graphic_description {
     height: 300px;
+    width: 1192px;
     border: none;
     box-shadow: none;
     position: absolute;
     top: 0px;
     left: calc((100vw - 1200px)/2);
+    border: 4px solid #731f1f;
+    border-bottom: none;
 }
-.graphic_description:hover {
+img.graphic_description:hover {
     display: block;
 }
 .menu_button:hover + img.graphic_description{
     display: block;
 }
 .menu_button {
-    width: 182px;
-    height: 34px;
-    padding: 20px 10px;
+    width: 188px;
+    height: 23px;
+    margin-top: 3px;
+    padding: 29px 10px;
     font-size: 20pt;
     display: inline-block;
     vertical-align: top;
-    margin-left: 0px;
     text-decoration: none;
     text-align: center;
     color: white;
