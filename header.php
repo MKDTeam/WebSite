@@ -34,6 +34,8 @@ auto();
 
 <div id="site_header"> 
   <img class="graphic_description" src="img/main_description.png" name="slide_show">
+  <div id="main_description">
+  </div>
   <!-- </tr>
   <tr align="center">
    <td align="right"><a href="javascript:chgImg(-1)">Предыдущая</a></td>

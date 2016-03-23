@@ -18,16 +18,15 @@
     margin-left: calc((100vw - 1200px)/2);
     text-align: left;
 }
-img.graphic_description {
+.graphic_description {
     height: 300px;
     border: none;
     box-shadow: none;
     position: absolute;
-    display: none;
     top: 0px;
     left: calc((100vw - 1200px)/2);
 }
-img.graphic_description:hover {
+.graphic_description:hover {
     display: block;
 }
 .menu_button:hover + img.graphic_description{
