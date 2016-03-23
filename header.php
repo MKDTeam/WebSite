@@ -31,8 +31,8 @@ function auto() {
 }
 auto();
 </script>
-<div id="site_header">
- 
+
+<div id="site_header"> 
   <img class="graphic_description" src="img/main_description.png" name="slide_show">
   <!-- </tr>
   <tr align="center">
