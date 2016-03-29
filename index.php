@@ -25,7 +25,7 @@
             require('order.php');
             break;
         default:
-            require('info.php');
+            require('main.php');
             break;
     }
     require('footer.php');

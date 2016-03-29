@@ -63,6 +63,9 @@ auto();
         Контакты
     </a>
    <!-- <img class="graphic_description" src="img/contacts_description.png"> -->
+   <a class="menu_button">
+        Обратная связь
+    </a>
 
     <a class="menu_button" href="index.php?page=info">
         О нас
