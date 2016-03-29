@@ -32,50 +32,60 @@ function auto() {
 auto();
 </script>
 
-<div id="site_header"> 
+<div id="main_description">
+</div>
+
+<div id="site_header">
   <img class="graphic_description" src="img/main_description.png" name="slide_show">
-  <div id="main_description">
-  </div>
-  <!-- </tr>
-  <tr align="center">
-   <td align="right"><a href="javascript:chgImg(-1)">Предыдущая</a></td>
-   <td align="center"><a href="javascript:auto()">Старт/Стоп</a></td>
-   <td align="left"><a href="javascript:chgImg(1)">Следующая</a></td>
-  </tr> -->
-
-
-    <!--<img id="main_description" src="img/description.png"> -->
-    <a href="index.php">
+  <table>
+  <tr>
+    <td>
+      <a href="index.php">
         <img id="logo" src="img/logo.png"/>
-    </a>
-
-    <a class="menu_button" href="index.php?page=info">
-        Подбор и доставка
-    </a>
-   <!-- <img class="graphic_description" src="img/main_description.png"> -->
-
-    <a class="menu_button" href="index.php?page=order">
-        Выкуп авто  
-    </a>
-
-    <a class="menu_button" href="index.php?page=order">
-        Автозапчасти
-    </a>
-    <!-- <img class="graphic_description" src="img/order_description.png"> -->
-    <a class="menu_button" href="index.php?page=order">
-        Сделать заказ 
-    </a>
-    <a class="menu_button">
-        Контакты
-    </a>
-   <!-- <img class="graphic_description" src="img/contacts_description.png"> -->
-   <a class="menu_button">
-        Обратная связь
-    </a>
-
-    <a class="menu_button" href="index.php?page=info">
-        О нас
-    </a>
- <!--   <img class="graphic_description" src="img/info_description.png"> -->
-
+      </a>
+    </td>
+    <td>
+      <a class="menu_button" href="index.php?page=info">
+        Подбор и доставка <div class="symbol">&#128666;</div>
+      </a>
+    </td>
+    <td>
+      <a class="menu_button" href="index.php?page=order">
+        Выкуп авто <div class="symbol">&#8381;</div>
+      </a>
+    </td>
+    <td>
+      <a class="menu_button" href="index.php?page=order">
+        Автозапчасти <div class="symbol">&#128295;</div>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a class="menu_button" href="index.php?page=order">
+        Сделать заказ <div class="symbol">&#128176;</div>
+      </a>
+    </td>
+    <td>
+      <a class="menu_button">
+        Контакты <div class="symbol">&#128214;</div>
+      </a>
+    </td>
+    <td>
+      <a class="menu_button">
+        Контакты <div class="symbol">&#128214;</div>
+      </a>
+    </td>
+    <td>
+      <a class="menu_button">
+        Обратная связь <div class="symbol">&#128222;</div>
+      </a>
+    </td>
+    <td>
+      <a class="menu_button" href="index.php?page=info">
+        О нас <div class="symbol">&#8505;</div>
+      </a>
+    </td>
+  </tr>
+  </table>
 </div>

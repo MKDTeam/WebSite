@@ -21,6 +21,15 @@
     padding: none;
     text-align: left;
 }
+#site_header_table {
+    padding: 0;
+    margin: 0;
+}
+.symbol{
+    color: black;
+    display: inline-block;
+    margin-left: 20px;
+}
 img.graphic_description {
     height: 300px;
     width: 1192px;
@@ -39,7 +48,7 @@ img.graphic_description:hover {
     display: block;
 }
 .menu_button {
-    width: 188px;
+    width: 250px;
     height: 23px;
     margin-top: 3px;
     padding: 29px 10px;
