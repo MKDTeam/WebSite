@@ -50,15 +50,21 @@ auto();
     </a>
 
     <a class="menu_button" href="index.php?page=info">
-        Главная
+        Подбор и доставка
     </a>
    <!-- <img class="graphic_description" src="img/main_description.png"> -->
 
     <a class="menu_button" href="index.php?page=order">
-        Сделать заказ 
+        Выкуп авто  
+    </a>
+
+    <a class="menu_button" href="index.php?page=order">
+        Автозапчасти
     </a>
     <!-- <img class="graphic_description" src="img/order_description.png"> -->
-    
+    <a class="menu_button" href="index.php?page=order">
+        Сделать заказ 
+    </a>
     <a class="menu_button">
         Контакты
     </a>
