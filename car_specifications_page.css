@@ -1,14 +1,4 @@
-.Content {
-    border-left: 4px solid #731f1f; 
-    border-right: 4px solid #731f1f;
-    width: 1112px;
-    margin-left: calc((100vw - 1200px)/2);
-    min-height: 100vh;
-    text-align: left;
-    font-size: 12pt;
-    padding: 40px;
-    background-color: rgba(215,217,215,0.95);
-}
+
 #Header{ /*parent: Description*/
 	padding: 10px;
 	width: 98%;

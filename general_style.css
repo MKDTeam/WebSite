@@ -10,6 +10,15 @@
     background-attachment: fixed;
     background-size: 100vw auto;
 }
+.Content {
+    width: 1120px;
+    margin-left: calc((100vw - 1200px)/2);
+    min-height: 100vh;
+    text-align: left;
+    font-size: 12pt;
+    padding: 40px;
+    background-color: rgba(215,217,215,0.95);
+}
 img.test {
 	background-color: #353b39;
 	border: 2px solid #353b39;

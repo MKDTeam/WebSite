@@ -11,7 +11,7 @@
     border-top: 4px solid #ffffff;
     padding: 5px 25px;
     margin: none;
-    height: 70px;
+    height: 60px;
     text-shadow: 0 0 12px #3c5659;
 }
 #site_header {
@@ -27,16 +27,17 @@ img.graphic_description {
     border: none;
     box-shadow: none;
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: calc((100vw - 1200px)/2);
     border-bottom: none;
 }
 .menu_button {
-    width: 168px;
-    height: 60px;
-    line-height: 60px;
+    width: 168.2px;
+    height: 50px;
+    line-height: 50px;
     vertical-align: top;
-    font-size: 14pt;
+    font-size: 13pt;
+    font-family: Arial;
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -47,6 +48,7 @@ img.graphic_description {
 }
 .menu_button:hover {
     background-color: white;
-    border-color:  #ffffff;
     color: #731f1f;
+    text-shadow: none;
+    font-weight: bold;
 }

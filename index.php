@@ -5,27 +5,27 @@
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="car_specifications_page.css">
-    <link rel="stylesheet" type="text/css" href="order.css">    
+    <link rel="stylesheet" type="text/css" href="pages/order.css">    
     <title>Предварительная версия</title>
 </head>
 <body id="page">
     <?php 
     require('header.php');
     switch ($_GET['page']) {
-        case 'info':
-            require('info.php');
-            break;
         case 1:
             require('car_specifications_page.php');
             break;
         case 2:
             require('car_specifications_2_page.php');
             break;   
-        case order:
-            require('order.php');
+        case 'order':
+            require('pages/order.php');
+            break;
+        case 'info':
+            require('pages/info.php');
             break;
         default:
-            require('main.php');
+            require('pages/main.php');
             break;
     }
     require('footer.php');
