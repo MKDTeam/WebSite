@@ -1,0 +1,78 @@
+#feedback_form {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #1f4fa7;
+  z-index: 100;
+  width: 300px;
+  height: 450px;
+  display: none;
+  position: fixed;
+  left: 10px;
+  top: calc(40vh - 250px);
+  border-radius: 10px;
+  box-shadow: 0 0 12px black;
+}
+#feedback_form:hover {
+  display: block;
+}
+#feedback_form_button{
+  color: white;
+  width: 150px;
+  height: 70px;
+  line-height: 90px;
+  z-index: 99;
+  text-align: center;
+  background-color: #731f1f;
+  display: block;
+  position: fixed;
+  font-size: 14pt;
+  left: -55px;
+  top: calc(40vh - 35px);
+  transform: rotate(-90deg);
+  box-shadow: 0 0 12px black;
+  text-shadow: 0 0 12px black;
+  border-radius: 10px;
+}
+#feedback_form_button:hover + #feedback_form{
+  display: block;
+}
+#Comment {
+  width: 258px;
+  resize: none;
+  border: 1px solid #353b39;
+  border-top: 2px solid black;
+}
+#submit_button {
+  background-color: #731f1f;
+  width: 238px;
+  border: none;
+  margin-top: 50px;
+  border-radius: 4px;
+  padding: 5px 10px; 
+  text-align: center;
+  font-size: 12pt;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 10px #3c5659;
+  box-shadow: 0 0 6px white;
+}
+#submit_button:hover {
+  background-color: white;
+  color: #731f1f;
+  font-weight: bold;
+}
+#feedback_form .text {
+  color: white;
+  display: block;
+  text-shadow: 0 0 10px #3c5659;
+  font-size: 14pt;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.field {
+  width: 258px;
+  resize: none;
+  border: 1px solid #353b39;
+  border-top: 2px solid black;
+  margin: 0px;
+}

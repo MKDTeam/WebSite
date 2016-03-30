@@ -10,6 +10,7 @@
 </head>
 <body id="page">
     <?php 
+    require('feedback_form.php');
     require('header.php');
     switch ($_GET['page']) {
         case 'sel_del':
