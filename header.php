@@ -50,12 +50,12 @@ auto();
     Выкуп авто <!--div class="symbol">&#8381;</div-->
   </a>
 
-  <a class="menu_button" href="index.php?page=spare_part">
-    Автозапчасти <!--div class="symbol">&#128295;</div-->
+<a class="menu_button" href="index.php?page=protection">
+    Защита картера <!--div class="symbol">&#128176;</div-->
   </a>
 
-  <a class="menu_button" href="index.php?page=protection">
-    Защита картера <!--div class="symbol">&#128176;</div-->
+  <a class="menu_button" href="index.php?page=spare_part">
+    Автозапчасти <!--div class="symbol">&#128295;</div-->
   </a>
 
   <a class="menu_button" href="index.php?page=contact">

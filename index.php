@@ -11,7 +11,6 @@
 </head>
 <body id="page">
     <?php 
-    require('feedback_form.php');
     require('header.php');
     switch ($_GET['page']) {
         case 'sel_del':
@@ -20,12 +19,12 @@
         case 'ransom':
             require('pages/ransom.php');
             break;
-        case 'spare_part':
-            require('pages/spare_part.php');
-            break;
         case 'protection':
             require('pages/protection.php');
             break;   
+        case 'spare_part':
+            require('pages/spare_part.php');
+            break;
         case 'contact':
             require('pages/contact.php');
             break; 
@@ -37,6 +36,7 @@
             break;
     }
     require('footer.php');
+    require('feedback_form.php');
     ?>
 </body>
 </html>
