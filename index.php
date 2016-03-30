@@ -5,7 +5,8 @@
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="car_specifications_page.css">
-    <link rel="stylesheet" type="text/css" href="pages/order.css">    
+    <link rel="stylesheet" type="text/css" href="pages/order.css">
+    <link rel="stylesheet" type="text/css" href="feedback_form.css">   
     <title>ГарантАвто</title>
 </head>
 <body id="page">
