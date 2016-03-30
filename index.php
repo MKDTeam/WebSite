@@ -6,21 +6,27 @@
     <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="car_specifications_page.css">
     <link rel="stylesheet" type="text/css" href="pages/order.css">    
-    <title>Предварительная версия</title>
+    <title>ГарантАвто</title>
 </head>
 <body id="page">
     <?php 
     require('header.php');
     switch ($_GET['page']) {
-        case 1:
-            require('car_specifications_page.php');
+        case 'sel_del':
+            require('pages/sel_del.php');
             break;
-        case 2:
-            require('car_specifications_2_page.php');
+        case 'ransom':
+            require('pages/ransom.php');
+            break;
+        case 'spare_part':
+            require('pages/spare_part.php');
+            break;
+        case 'protection':
+            require('pages/protection.php');
             break;   
-        case 'order':
-            require('pages/order.php');
-            break;
+        case 'contact':
+            require('pages/contact.php');
+            break; 
         case 'info':
             require('pages/info.php');
             break;

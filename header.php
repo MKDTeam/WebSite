@@ -42,28 +42,24 @@ auto();
   </div>
   <img class="graphic_description" src="img/slide_1.png" name="slide_show">
 
-  <a class="menu_button" href="index.php?page=">
+  <a class="menu_button" href="index.php?page=sel_del">
     Подбор и доставка <!--div class="symbol">&#128666;</div-->
   </a>
 
-  <a class="menu_button" href="index.php?page=">
+  <a class="menu_button" href="index.php?page=ransom">
     Выкуп авто <!--div class="symbol">&#8381;</div-->
   </a>
 
-  <a class="menu_button" href="index.php?page=">
+  <a class="menu_button" href="index.php?page=spare_part">
     Автозапчасти <!--div class="symbol">&#128295;</div-->
   </a>
 
-  <a class="menu_button" href="index.php?page=order">
-    Сделать заказ <!--div class="symbol">&#128176;</div-->
+  <a class="menu_button" href="index.php?page=protection">
+    Защита картера <!--div class="symbol">&#128176;</div-->
   </a>
 
-  <a class="menu_button" href="index.php?page=">
+  <a class="menu_button" href="index.php?page=contact">
     Контакты <!--div class="symbol">&#128214;</div-->
-  </a>
-
-  <a class="menu_button" href="index.php?page=">
-    Обратная связь <!--div class="symbol">&#128222;</div-->
   </a>
 
   <a class="menu_button" href="index.php?page=info">

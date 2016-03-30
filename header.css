@@ -20,6 +20,7 @@
     margin-left: calc((100vw - 1200px)/2);
     padding: none;
     text-align: left;
+    font-size: 0pt;
 }
 img.graphic_description {
     height: 300px;
@@ -32,7 +33,7 @@ img.graphic_description {
     border-bottom: none;
 }
 .menu_button {
-    width: 168.2px;
+    width: 196px;
     height: 50px;
     line-height: 50px;
     vertical-align: top;

@@ -5,10 +5,19 @@
     width: 100vw;
     min-width: 1200px;
     text-align: center;
-    font-size: 0pt;
+    
     background-image: url(img/background.jpg);
     background-attachment: fixed;
     background-size: 100vw auto;
+}
+.download:hover{
+	color: #CD5C5C;
+}
+.main{
+	font-size: 14pt;
+}
+.info{
+	font-size: 15pt;
 }
 .Content {
     width: 1120px;
@@ -19,6 +28,7 @@
     padding: 40px;
     background-color: rgba(215,217,215,0.95);
 }
+
 img.test {
 	background-color: #353b39;
 	border: 2px solid #353b39;
