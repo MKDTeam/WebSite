@@ -10,6 +10,14 @@
     background-attachment: fixed;
     background-size: 100vw auto;
 }
+.fig {
+    display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: center; /* Выравнивание по центру */
+    font-style: italic; /* Курсивное начертание */
+    margin-top: 10px; /* Отступ сверху */
+    margin-bottom: 5px; /* Отступ снизу */
+    color: #666; /* Цвет подрисуночной подписи */
+   }
 .download:hover{
 	color: #CD5C5C;
 }
