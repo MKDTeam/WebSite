@@ -15,9 +15,8 @@
     text-align: center; /* Выравнивание по центру */
     font-style: italic; /* Курсивное начертание */
     margin: 0 10px 10px 0; /* Отступы */
-    color: #666; /* Цвет подрисуночной подписи */
+    color: black; /* Цвет подрисуночной подписи */
   }
-
 .download:hover{
 	color: #CD5C5C;
 }
@@ -73,3 +72,4 @@ tr.head td {
 	margin: none;
 
 }
+
