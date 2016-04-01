@@ -1,9 +1,3 @@
-#main_description {
-    width: 1200px;
-    height: 296px;
-    border: none;
-    box-shadow: none;
-}
 #logo {
     background-color: #ffffff;
     display: inline-block;
@@ -22,14 +16,11 @@
     text-align: left;
     font-size: 0pt;
 }
-img.graphic_description {
+#slide_show {
     height: 300px;
     width: 1200px;
     border: none;
     box-shadow: none;
-    position: absolute;
-    top: 70px;
-    left: calc((100vw - 1200px)/2);
     border-bottom: none;
 }
 .menu_button {

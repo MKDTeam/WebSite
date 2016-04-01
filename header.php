@@ -38,9 +38,7 @@ auto();
     <img id="logo" src="img/logo.png"/>
   </a>
 
-  <div id="main_description">
-  </div>
-  <img class="graphic_description" src="img/slide_1.png" name="slide_show">
+  <img id="slide_show" src="img/slide_1.png" name="slide_show">
 
   <a class="menu_button" href="index.php?page=sel_del">
     Подбор и доставка <!--div class="symbol">&#128666;</div-->
