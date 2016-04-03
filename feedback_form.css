@@ -1,78 +1,77 @@
 #feedback_form {
-  padding: 30px 20px;
-  text-align: center;
-  background-color: #1f4fa7;
-  z-index: 100;
-  width: 300px;
-  height: 450px;
-  display: none;
   position: fixed;
   left: 10px;
-  top: calc(40vh - 250px);
-  border-radius: 10px;
-  box-shadow: 0 0 12px black;
+  top: calc(50vh - 150px);
 }
-#feedback_form:hover {
-  display: block;
+#feedback_form {
+  background: #f6f6f6;
+  box-shadow: 0 0 5px #ccc; 
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+  width: 300px;
 }
-#feedback_form_button{
-  color: white;
-  width: 150px;
-  height: 70px;
-  line-height: 90px;
-  z-index: 99;
-  text-align: center;
-  background-color: #731f1f;
-  display: block;
-  position: fixed;
-  font-size: 14pt;
-  left: -55px;
-  top: calc(40vh - 35px);
-  transform: rotate(-90deg);
-  box-shadow: 0 0 12px black;
-  text-shadow: 0 0 12px black;
-  border-radius: 10px;
+*[border="smooth"] {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
-#feedback_form_button:hover + #feedback_form{
-  display: block;
+
+#feedback_form h4 {
+  font: 14px Verdana;
+  color: #333333;
+  text-align: left;
+  padding: 10px 10px 0 10px;
 }
-#Comment {
-  width: 258px;
-  resize: none;
-  border: 1px solid #353b39;
-  border-top: 2px solid black;
+
+#feedback_form label {
+  font: 12px Verdana;
+  color: #333;
+  padding: 10px;
 }
-#submit_button {
-  background-color: #731f1f;
-  width: 238px;
+
+#feedback_form .input { 
+  width: 170px;
+  height: 20px;
+  overflow: hidden;
+  background: white;
+  border: solid 1px #DFE2E5;
+  margin: 5px 0 10px 10px;
+  box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+}
+
+#feedback_form .input input {
+  width: 165px;
+  height: 26px;
+  background: white;
+  margin: -3px 0 0 -5px;
+  padding: 0px 8px;
   border: none;
-  margin-top: 30px;
-  border-radius: 4px;
-  padding: 5px 10px; 
-  text-align: center;
-  font-size: 12pt;
-  text-decoration: none;
-  color: white;
-  text-shadow: 0 0 10px #3c5659;
-  box-shadow: 0 0 6px white;
+  background: transparent;
 }
-#submit_button:hover {
-  background-color: white;
-  color: #731f1f;
-  font-weight: bold;
+
+#feedback_form .textarea {
+  height: 70px;
+  width: calc(100% - 20px);
+  overflow: hidden;
+  resize: vertical;
+  background: white;
+  border: solid 1px #DFE2E5;
+  margin: 5px 0 10px 10px;
+  box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
 }
-#feedback_form .text {
-  color: white;
-  display: block;
-  text-shadow: 0 0 10px #3c5659;
-  font-size: 14pt;
-  font-weight: bold;
-  margin-top: 10px;
-}
-.field {
-  width: 258px;
-  resize: none;
-  border: 1px solid #353b39;
-  border-top: 2px solid black;
-  margin: 0px;
+
+#feedback_form button {
+  border: 2px #ccc solid;
+  width: 150px;
+  height: 25px;
+  font: 12px Verdana;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #cc0000;
+  padding-bottom: 2px;
+  margin: 5px 0 15px 135px;
 }

@@ -1,42 +1,16 @@
-<div id="feedback_form_button">
-	Обратная связь
-</div>
-<div id="feedback_form">
-	<form action="index.php?page=feedback" method="POST" name="textarea">
-		<div class="text">Здесь вы можете составить заказ.</div>
-		<textarea 
-			id="Comment" 
-			name="comment" 
-			autofocus="true" 
-			rows="12"></textarea>
-		<div class="text">Ваш email:</div>
-		<p><input 
-		   	class="field" 
-		   	name="mail" 
-		   	type="email" 
-		   	size="30" 
-		   	autocomplete="on" 
-		   	required="Пожалуйста, заполните это поле" >
-		<div class="text">Ваш телефон:</div>
-		<p><input
-			class="field" 
-		   	name="phonenumber" 
-		   	type="text" 
-		   	size="30" 
-		   	maxlength="11" 
-		   	pattern="[0-9]{11}" 
-		   	autocomplete="on" 
-		   	required="Пожалуйста, заполните это поле">
-		<p><input 
-			id="submit_button" 
-		   	name="send" 
-		   	type="submit" 
-		   	value="Отправить">
-		</p>
+<div border="smooth" id="feedback_form" align="left">
+	<h4>Задать новый вопрос:</h4>
+	<div id="loadBar" align="center"></div>
+	<form action="#" method="post" id="cForm2">
+		<label>Ваше имя:</label>
+		<input class="input" border="smooth" value="" id="posName" type="text">
+		<label>Ваш email:</label>
+		<input class="input" border="smooth" value="" id="posEmail" type="text">
+	   	<label>Ваше сообщение:</label>
+	   	<textarea id="posText" class="textarea" border="smooth"></textarea> 
+		<button type="button" id="send">Отправить --></button>
 	</form>
 </div>
-
-
 
 <?php
     $to  = "8230001@inbox.ru";
