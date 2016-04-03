@@ -1,14 +1,36 @@
+#feedback_button {
+  color: white;
+  width: 300px;
+  height: 70px;
+  line-height: 90px;
+  z-index: 3;
+  text-align: center;
+  background-color: #731f1f;
+  display: block;
+  position: fixed;
+  font-size: 14pt;
+  left: -140px;
+  top: calc(50vh - 40px);
+  transform: rotate(-90deg);
+  box-shadow: 0 0 12px black;
+  text-shadow: 0 0 12px black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 #feedback_form {
   position: fixed;
   left: 10px;
   top: calc(50vh - 150px);
-}
-#feedback_form {
+  z-index: 3;
+  width: 300px;
+  display: none;
+
   background: #f6f6f6;
   box-shadow: 0 0 5px #ccc; 
   -webkit-box-shadow: 0 0 5px #ccc;
   -moz-box-shadow: 0 0 5px #ccc;
-  width: 300px;
+  
 }
 *[border="smooth"] {
   border-radius: 5px;

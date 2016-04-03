@@ -9,7 +9,6 @@ var ImgNum = 0;
 var ImgLength = all_images.length - 1;
 var delay = 2500;
 var lock = false;
-var stop = false;
 var run;
 
 function chgImg(direction) {
@@ -22,11 +21,13 @@ function chgImg(direction) {
 }
 
 function onImageOver() {
+  auto();
   document.left_arrow.setAttribute('style', 'opacity: 1;');
   document.right_arrow.setAttribute('style', 'opacity: 1;');
 }
 
 function onImageOut() {
+  auto();
   document.left_arrow.setAttribute('style', 'opacity: 0;');
   document.right_arrow.setAttribute('style', 'opacity: 0;');
 }
@@ -52,19 +53,19 @@ auto();
   <img id="left_arrow" 
        src="img/left_arrow.png"
        name="left_arrow"
-       onmouseover="this.style.opacity = 1; stop = true;" 
-       onmouseout="this.style.opacity = 0"
+       onmouseover="this.style.opacity = 1; auto()" 
+       onmouseout="this.style.opacity = 0; auto()"
        onclick="chgImg(-1)">
   <img id="slide_show" 
        src="img/slide_1.png" 
        name="slide_show" 
-       onmouseover="onImageOver(); delay = 999999;" 
+       onmouseover="onImageOver()" 
        onmouseout="onImageOut()">
   <img id="right_arrow" 
        src="img/right_arrow.png" 
        name="right_arrow"
-       onmouseover="this.style.opacity = 1; stop = true;" 
-       onmouseout="this.style.opacity = 0"
+       onmouseover="this.style.opacity = 1; auto()" 
+       onmouseout="this.style.opacity = 0; auto()"
        onclick="chgImg(1)">  
 
   <a class="menu_button" href="index.php?page=sel_del">

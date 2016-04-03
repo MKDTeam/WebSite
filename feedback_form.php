@@ -1,7 +1,16 @@
-<div border="smooth" id="feedback_form" align="left">
+
+
+<div id="feedback_button">
+	Задать вопрос \ Сделать заказ
+</div>
+
+<div border="smooth" 
+	 id="feedback_form" 
+	 align="left"
+	 name="feedback_form">
 	<h4>Задать новый вопрос:</h4>
 	<div id="loadBar" align="center"></div>
-	<form action="#" method="post" id="cForm2">
+ 	<form action="#" method="post" id="cForm2">
 		<label>Ваше имя:</label>
 		<input class="input" border="smooth" value="" id="posName" type="text">
 		<label>Ваш email:</label>
@@ -11,6 +20,43 @@
 		<button type="button" id="send">Отправить --></button>
 	</form>
 </div>
+
+<script type="text/javascript">
+	var feedback_form = document.getElementById("feedback_form");
+	var feedback_button = document.getElementById("feedback_button");
+	var is_form_active = false;
+	var is_ready_to_hide = false;
+
+	feedback_button.onclick = function() {
+		showFeedbackForm();
+	};
+
+	feedback_form.onmouseover = function() {
+		is_ready_to_hide = false;
+	};
+	feedback_form.onmouseout = function() {
+		is_ready_to_hide = true;
+	};
+	window.onclick = function() {
+		if (is_ready_to_hide) hideFeedbackForm();
+	};
+
+	function showFeedbackForm() {
+		if (!is_form_active) {
+			feedback_form.setAttribute('style', 'display: block;');
+			is_form_active = true;
+		}
+	}
+
+	function hideFeedbackForm() {
+		if (is_form_active) {
+			feedback_form.setAttribute('style', 'display: none;');
+			is_form_active = false;
+			is_ready_to_hide = false;
+		}
+	}
+</script>
+
 
 <?php
     $to  = "8230001@inbox.ru";

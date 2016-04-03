@@ -29,7 +29,7 @@
     top: 200px;
     left: calc((100vw - 1200px)/2);
     opacity: 0;
-    z-index: 111;
+    z-index: 2;
     cursor: pointer;
 }
 #right_arrow {
@@ -38,7 +38,7 @@
     top: 200px;
     left: calc((100vw - 1200px)/2 + 1140px);
     opacity: 0;
-    z-index: 111;
+    z-index: 2;
     cursor: pointer;
 }
 
