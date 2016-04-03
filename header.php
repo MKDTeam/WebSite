@@ -9,6 +9,7 @@ var ImgNum = 0;
 var ImgLength = all_images.length - 1;
 var delay = 2500;
 var lock = false;
+var stop = false;
 var run;
 
 function chgImg(direction) {
@@ -20,15 +21,25 @@ function chgImg(direction) {
  }
 }
 
+function onImageOver() {
+  document.left_arrow.setAttribute('style', 'opacity: 1;');
+  document.right_arrow.setAttribute('style', 'opacity: 1;');
+}
+
+function onImageOut() {
+  document.left_arrow.setAttribute('style', 'opacity: 0;');
+  document.right_arrow.setAttribute('style', 'opacity: 0;');
+}
+
 function auto() {
- if (lock == true) {
-  lock = false;
-  window.clearInterval(run);
- }
- else if (lock == false) {
-  lock = true;
-  run = setInterval("chgImg(1)", delay);
- }
+  if (lock == true) {
+    lock = false;
+    window.clearInterval(run);
+  }
+  else if (lock == false) {
+    lock = true;
+    run = setInterval("chgImg(1)", delay);
+  }
 }
 auto();
 </script>
@@ -38,7 +49,23 @@ auto();
     <img id="logo" src="img/logo.png"/>
   </a>
 
-  <img id="slide_show" src="img/slide_1.png" name="slide_show">
+  <img id="left_arrow" 
+       src="img/left_arrow.png"
+       name="left_arrow"
+       onmouseover="this.style.opacity = 1; stop = true;" 
+       onmouseout="this.style.opacity = 0"
+       onclick="chgImg(-1)">
+  <img id="slide_show" 
+       src="img/slide_1.png" 
+       name="slide_show" 
+       onmouseover="onImageOver(); delay = 999999;" 
+       onmouseout="onImageOut()">
+  <img id="right_arrow" 
+       src="img/right_arrow.png" 
+       name="right_arrow"
+       onmouseover="this.style.opacity = 1; stop = true;" 
+       onmouseout="this.style.opacity = 0"
+       onclick="chgImg(1)">  
 
   <a class="menu_button" href="index.php?page=sel_del">
     Подбор и доставка <!--div class="symbol">&#128666;</div-->

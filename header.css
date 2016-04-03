@@ -23,6 +23,25 @@
     box-shadow: none;
     border-bottom: none;
 }
+#left_arrow {
+    width: 60px;
+    position: absolute;
+    top: 200px;
+    left: calc((100vw - 1200px)/2);
+    opacity: 0;
+    z-index: 111;
+    cursor: pointer;
+}
+#right_arrow {
+    width: 60px;
+    position: absolute;
+    top: 200px;
+    left: calc((100vw - 1200px)/2 + 1140px);
+    opacity: 0;
+    z-index: 111;
+    cursor: pointer;
+}
+
 .menu_button {
     width: 196px;
     height: 50px;
