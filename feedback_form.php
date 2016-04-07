@@ -8,10 +8,16 @@
 	 align="left"
 	 name="feedback_form">
 	<div>
-		<div class="change_type_button">Задать вопрос</div>
-		<div class="change_type_button">Сделать заказ</div>
+		<div class="change_type_button"
+			 id="question_button">
+			Задать вопрос
+		</div>
+		<div class="change_type_button"
+			 id="order_button">
+			Сделать заказ
+		</div>
 	</div>
-	<div>
+	<div id="question">
 	 	<h4>Задать новый вопрос:</h4>
 	 	<form action="#" method="post" id="cForm2">
 			<label>Ваше имя:</label>
@@ -23,7 +29,7 @@
 			<button type="button" id="send">Отправить --></button>
 		</form>
 	</div>
-	<div>
+	<div id="order">
 	 	<h4>Сделать заказ:</h4>
 	 	<form action="#" method="post" id="cForm2">
 			<label>Ваше имя:</label>
@@ -41,8 +47,24 @@
 <script type="text/javascript">
 	var feedback_form = document.getElementById("feedback_form");
 	var feedback_button = document.getElementById("feedback_button");
+
+	var question_button = document.getElementById("question_button");
+	var order_button = document.getElementById("order_button");
+
 	var is_form_active = false;
 	var is_ready_to_hide = false;
+
+	question_button.onclick = function() {
+		var question = document.getElementById("question");
+		question.setAttribute('style', 'display: block;');
+		order.setAttribute('style', 'display: none;');
+	};
+
+	order_button.onclick = function() {
+		var order = document.getElementById("order");
+		order.setAttribute('style', 'display: block;');
+		question.setAttribute('style', 'display: none;');
+	};
 
 	feedback_button.onclick = function() {
 		showFeedbackForm();
@@ -100,5 +122,4 @@
 	$headers .= "From: $mail" . "\r\n";
 
     mail($to, $subject, $message, $headers);
-
 ?>
