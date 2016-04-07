@@ -100,11 +100,11 @@
 <?php
     $to  = "8230001@inbox.ru";
 
-	$subject = "Заказ на доставку деталей";
+	$subject = "Сделан заказ/Задали вопрос";
 
-	$comment = $_POST['comment'];
-    $mail = $_POST['mail'];
-    $phonenumber = $_POST['phonenumber'];
+	$comment = $_POST['posText'];
+    $mail = $_POST['posEmail'];
+    $name = $_POST['posName'];
 
 	$message = "
 	<html>
@@ -113,7 +113,7 @@
 	        <p> На вашем сайте во вкладке \"Сделать заказ\" оставлен запрос следующего содержания:
 	        <p> \"$comment\"
 	        <p>
-    		<p> Телефонный номер заказчика: $phonenumber </p>
+    		<p> Имя заказчика: $name </p>
     		<p> Почта заказчика: $mail </p>
 	    </body>
 	</html>";
