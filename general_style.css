@@ -37,39 +37,5 @@
     background-color: rgba(215,217,215,0.95);
 }
 
-img.test {
-	background-color: #353b39;
-	border: 2px solid #353b39;
-}
 
-table.test {
-	width: 100%;
-	border-collapse: collapse;
-	border: 3px solid #353b39;
-	margin: 10px;
-}
-tr.test {
-	border-bottom: 3px solid #353b39;
-}
-
-td.test {
-	padding: 10px;
-}
-
-th.test {
-	padding: 10px;
-	text-align: left;
-}
-tr.head {
-	background-color: #3f7fbf;
-	border: 3px solid #3f7fbf;
-}
-tr.head td {
-	color: #ffffff;
-	font-weight: bold;
-	text-shadow: 0 0 8px #353b39;
-	border: none;
-	margin: none;
-
-}
 

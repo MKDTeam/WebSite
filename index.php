@@ -4,38 +4,37 @@
     <link rel="stylesheet" type="text/css" href="general_style.css">
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
-    <link rel="stylesheet" type="text/css" href="car_specifications_page.css">
     <link rel="stylesheet" type="text/css" href="pages/order.css">
     <link rel="stylesheet" type="text/css" href="feedback_form.css">   
     <title>ГарантАвто</title>
 </head>
 <body id="page">
-    <?php 
-    require('header.php');
+    <?php
+    require('header.html');
     switch ($_GET['page']) {
         case 'sel_del':
-            require('pages/sel_del.php');
+            require('pages/sel_del.html');
             break;
         case 'ransom':
-            require('pages/ransom.php');
+            require('pages/ransom.html');
             break;
         case 'protection':
-            require('pages/protection.php');
+            require('pages/protection.html');
             break;   
         case 'spare_part':
-            require('pages/spare_part.php');
+            require('pages/spare_part.html');
             break;
         case 'contact':
-            require('pages/contact.php');
+            require('pages/contact.html');
             break; 
         case 'info':
-            require('pages/info.php');
+            require('pages/info.html');
             break;
         default:
-            require('pages/main.php');
+            require('pages/main.html');
             break;
     }
-    require('footer.php');
+    require('footer.html');
     require('feedback_form.php');
     ?>
 </body>
