@@ -1,21 +1,26 @@
 #feedback_button {
-  color: white;
-  width: 300px;
-  height: 70px;
+  color: #731f1f;
+  width: 350px;
+  height: 80px;
   line-height: 90px;
   z-index: 3;
   text-align: center;
-  background-color: #731f1f;
+  font-weight: bold;
+  background-color: white;
   display: block;
   position: fixed;
-  font-size: 14pt;
-  left: -140px;
+  font-size: 18pt;
+  left: -155px;
   top: calc(50vh - 40px);
   transform: rotate(-90deg);
-  box-shadow: 0 0 12px black;
-  text-shadow: 0 0 12px black;
+  box-shadow: 0 0 12px white;
+  text-shadow: 0 0 1px #731f1f;
   border-radius: 10px;
   cursor: pointer;
+}
+#feedback_button:hover {
+  color: white;
+  background-color: #731f1f;
 }
 
 #feedback_form {
@@ -32,11 +37,6 @@
   -moz-box-shadow: 0 0 5px #ccc;
   
 }
-*[border="smooth"] {
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
 
 #feedback_form h4 {
   font: 14px Verdana;
@@ -49,6 +49,19 @@
   font: 12px Verdana;
   color: #333;
   padding: 10px;
+}
+
+*[border="smooth"] {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+#feedback_form .change_type_button {
+  display: inline-block;
+  width: 49%;
+  font-size: auto;
+  cursor: pointer;
 }
 
 #feedback_form .input { 

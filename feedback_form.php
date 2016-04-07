@@ -1,24 +1,41 @@
-
-
 <div id="feedback_button">
 	Задать вопрос \ Сделать заказ
 </div>
+
 
 <div border="smooth" 
 	 id="feedback_form" 
 	 align="left"
 	 name="feedback_form">
-	<h4>Задать новый вопрос:</h4>
-	<div id="loadBar" align="center"></div>
- 	<form action="#" method="post" id="cForm2">
-		<label>Ваше имя:</label>
-		<input class="input" border="smooth" value="" id="posName" type="text">
-		<label>Ваш email:</label>
-		<input class="input" border="smooth" value="" id="posEmail" type="text">
-	   	<label>Ваше сообщение:</label>
-	   	<textarea id="posText" class="textarea" border="smooth"></textarea> 
-		<button type="button" id="send">Отправить --></button>
-	</form>
+	<div>
+		<div class="change_type_button">Задать вопрос</div>
+		<div class="change_type_button">Сделать заказ</div>
+	</div>
+	<div>
+	 	<h4>Задать новый вопрос:</h4>
+	 	<form action="#" method="post" id="cForm2">
+			<label>Ваше имя:</label>
+			<input class="input" border="smooth" value="" id="posName" type="text">
+			<label>Ваш email:</label>
+			<input class="input" border="smooth" value="" id="posEmail" type="text">
+		   	<label>Ваше сообщение:</label>
+		   	<textarea id="posText" class="textarea" border="smooth"></textarea> 
+			<button type="button" id="send">Отправить --></button>
+		</form>
+	</div>
+	<div>
+	 	<h4>Сделать заказ:</h4>
+	 	<form action="#" method="post" id="cForm2">
+			<label>Ваше имя:</label>
+			<input class="input" border="smooth" value="" id="posName" type="text">
+			<label>Ваш email:</label>
+			<input class="input" border="smooth" value="" id="posEmail" type="text">
+		   	<label>Ваше сообщение:</label>
+		   	<textarea id="posText" class="textarea" border="smooth"></textarea> 
+			<button type="button" id="send">Отправить --></button>
+		</form>
+	</div>
+
 </div>
 
 <script type="text/javascript">
