@@ -9,34 +9,36 @@
 	 name="feedback_form">
 	<div>
 		<div class="change_type_button"
-			 id="question_button">
+			 id="question_button"
+			 selected="true">
 			Задать вопрос
 		</div>
 		<div class="change_type_button"
-			 id="order_button">
+			 id="order_button"
+			 selected="false">
 			Сделать заказ
 		</div>
 	</div>
 	<div id="question">
-	 	<h4>Задать новый вопрос:</h4>
+		<h1>Здесь вы можете задать любой интересующий вас вопрос.</h1>
 	 	<form action="#" method="post" id="cForm2">
-			<label>Ваше имя:</label>
+		   	<label>Ваш вопрос:</label>
+		   	<textarea id="posText" class="textarea" border="smooth"></textarea>
+		   	<label>Ваше имя:</label>
 			<input class="input" border="smooth" value="" id="posName" type="text">
 			<label>Ваш email:</label>
 			<input class="input" border="smooth" value="" id="posEmail" type="text">
-		   	<label>Ваше сообщение:</label>
-		   	<textarea id="posText" class="textarea" border="smooth"></textarea> 
 			<button type="button" id="send">Отправить --></button>
 		</form>
 	</div>
 	<div id="order">
-	 	<h4>Сделать заказ:</h4>
+		<h1>Здесь вы можете сделать заказ.</h1>
 	 	<form action="#" method="post" id="cForm2">
 			<label>Ваше имя:</label>
 			<input class="input" border="smooth" value="" id="posName" type="text">
 			<label>Ваш email:</label>
 			<input class="input" border="smooth" value="" id="posEmail" type="text">
-		   	<label>Ваше сообщение:</label>
+		   	<label>Ваш заказ:</label>
 		   	<textarea id="posText" class="textarea" border="smooth"></textarea> 
 			<button type="button" id="send">Отправить --></button>
 		</form>
@@ -56,14 +58,22 @@
 
 	question_button.onclick = function() {
 		var question = document.getElementById("question");
+
 		question.setAttribute('style', 'display: block;');
+		question_button.setAttribute('selected', 'true');
+
 		order.setAttribute('style', 'display: none;');
+		order_button.setAttribute('selected', 'false');
 	};
 
 	order_button.onclick = function() {
 		var order = document.getElementById("order");
+
 		order.setAttribute('style', 'display: block;');
+		order_button.setAttribute('selected', 'true');
+
 		question.setAttribute('style', 'display: none;');
+		question_button.setAttribute('selected', 'false');
 	};
 
 	feedback_button.onclick = function() {
@@ -83,6 +93,7 @@
 	function showFeedbackForm() {
 		if (!is_form_active) {
 			feedback_form.setAttribute('style', 'display: block;');
+			feedback_button.setAttribute('style', 'opacity: 0;');
 			is_form_active = true;
 		}
 	}
@@ -90,6 +101,7 @@
 	function hideFeedbackForm() {
 		if (is_form_active) {
 			feedback_form.setAttribute('style', 'display: none;');
+			feedback_button.setAttribute('style', 'opacity: 1;');
 			is_form_active = false;
 			is_ready_to_hide = false;
 		}

@@ -11,7 +11,7 @@
 #site_header {
     background-color: #731f1f;
     width: 1200px;
-    margin-left: calc((100vw - 1200px)/2);
+    margin-left: calc((100% - 1200px)/2);
     padding: none;
     text-align: left;
     font-size: 0pt;

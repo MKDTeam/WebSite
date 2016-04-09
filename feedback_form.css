@@ -1,20 +1,19 @@
 #feedback_button {
-  color: #731f1f;
+  color: white;
   width: 350px;
   height: 80px;
   line-height: 90px;
   z-index: 3;
   text-align: center;
-  font-weight: bold;
-  background-color: white;
+  background-color: #fc3f05; /* #014370, #00a3d1, #f5a264, #fc3f05, #c23a2f */
   display: block;
   position: fixed;
-  font-size: 18pt;
+  font-size: 19pt;
   left: -155px;
   top: calc(50vh - 40px);
   transform: rotate(-90deg);
-  box-shadow: 0 0 12px white;
-  text-shadow: 0 0 1px #731f1f;
+  box-shadow: 0 0 12px black;
+  text-shadow: 0 0 4px #014370;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -31,23 +30,21 @@
   width: 300px;
   display: none;
 
-  background: #f6f6f6;
+  background: #f2ca80;
   box-shadow: 0 0 5px #ccc; 
   -webkit-box-shadow: 0 0 5px #ccc;
   -moz-box-shadow: 0 0 5px #ccc;
   
 }
 
-#feedback_form h4 {
-  font: 14px Verdana;
-  color: #333333;
-  text-align: left;
-  padding: 10px 10px 0 10px;
+#feedback_form h1 {
+  font-size: 14pt;
+  text-align: center;
+  padding: 10px;
 }
 
 #feedback_form label {
-  font: 12px Verdana;
-  color: #333;
+  color: #0d0d0d;
   padding: 10px;
 }
 
@@ -58,23 +55,42 @@
 }
 
 #feedback_form #order {
-  display: block;
-}
-
-#feedback_form #question {
   display: none;
 }
 
+#feedback_form #question {
+  display: block;
+}
+
 #feedback_form .change_type_button {
+  margin: 10px 0px 0px 10px;
   padding: 6px 0px;
-  border: 1px solid black;
+  box-shadow: 0 0 5px black;
   border-radius: 4px;
   display: inline-block;
-  width: 48%;
+  width: 134px;
   font-size: 13pt;
   font-weight: bold;
   cursor: pointer;
   text-align: center;
+}
+
+#question_button[selected="false"] {
+  background-color: #bf8a49;
+}
+#question_button[selected="true"] {
+  background-color: #f2ca80;
+  cursor: default;
+  box-shadow: none;
+}
+
+#order_button[selected="false"] {
+  background-color: #bf8a49;
+}
+#order_button[selected="true"] {
+  background-color: #f2ca80;
+  cursor: default;
+  box-shadow: none;
 }
 
 #feedback_form .input { 
@@ -101,7 +117,7 @@
 
 #feedback_form .textarea {
   height: 70px;
-  width: calc(100% - 20px);
+  width: calc(100% - 34px);
   overflow: hidden;
   resize: vertical;
   background: white;
@@ -113,13 +129,14 @@
 }
 
 #feedback_form button {
-  border: 2px #ccc solid;
+  border: none;
+  box-shadow: 0 0 5px black;
   width: 150px;
   height: 25px;
   font: 12px Verdana;
   font-weight: 700;
-  color: #FFFFFF;
-  background-color: #cc0000;
+  color: black;
+  background-color: #bf8a49;
   padding-bottom: 2px;
   margin: 5px 0 15px 135px;
 }
