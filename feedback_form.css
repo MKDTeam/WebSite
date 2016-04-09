@@ -81,7 +81,7 @@
 #question_button[selected="true"] {
   background-color: #f2ca80;
   cursor: default;
-  box-shadow: none;
+  
 }
 
 #order_button[selected="false"] {
@@ -90,7 +90,7 @@
 #order_button[selected="true"] {
   background-color: #f2ca80;
   cursor: default;
-  box-shadow: none;
+  
 }
 
 #feedback_form .input { 
@@ -139,4 +139,5 @@
   background-color: #bf8a49;
   padding-bottom: 2px;
   margin: 5px 0 15px 135px;
+  cursor:pointer;
 }

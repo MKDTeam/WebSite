@@ -27,7 +27,7 @@
     width: 60px;
     position: absolute;
     top: 200px;
-    left: calc((100vw - 1200px)/2);
+    left: calc((100% - 1200px)/2);
     opacity: 0;
     z-index: 2;
     cursor: pointer;
@@ -36,7 +36,7 @@
     width: 60px;
     position: absolute;
     top: 200px;
-    left: calc((100vw - 1200px)/2 + 1140px);
+    left: calc((100% - 1200px)/2 + 1140px);
     opacity: 0;
     z-index: 2;
     cursor: pointer;

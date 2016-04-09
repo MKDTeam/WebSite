@@ -110,7 +110,7 @@
 
 
 <?php
-    $to  = "8230001@inbox.ru";
+    $to  = "zirecufugu@leeching.net";
 
 	$subject = "Сделан заказ/Задали вопрос";
 
