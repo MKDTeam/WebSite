@@ -23,24 +23,24 @@
 		<h1>Здесь вы можете задать любой интересующий вас вопрос.</h1>
 	 	<form action="#" method="post" id="cForm2">
 		   	<label>Ваш вопрос:</label>
-		   	<textarea id="posText" class="textarea" border="smooth"></textarea>
+		   	<textarea id="posText" name="posText" class="textarea" border="smooth"></textarea>
 		   	<label>Ваше имя:</label>
-			<input class="input" border="smooth" value="" id="posName" type="text">
+			<input class="input" border="smooth" name="posName" id="posName" type="text" autocomplete="on" required>
 			<label>Ваш email:</label>
-			<input class="input" border="smooth" value="" id="posEmail" type="text">
-			<button type="button" id="send">Отправить --></button>
+			<input class="input" border="smooth" name="posEmail" autocomplete="on" id="posEmail" type="email">
+			<input type="submit" onclick="this.function(alert('Ваш запрос отправлен!'))" name="question" value="Отправить -->">
 		</form>
 	</div>
 	<div id="order">
 		<h1>Здесь вы можете сделать заказ.</h1>
 	 	<form action="#" method="post" id="cForm2">
 			<label>Ваше имя:</label>
-			<input class="input" border="smooth" value="" id="posName" type="text">
+			<input class="input" border="smooth" name="posName" autocomplete="on" id="posName" type="text">
 			<label>Ваш email:</label>
-			<input class="input" border="smooth" value="" id="posEmail" type="text">
+			<input class="input" border="smooth" name="posEmail" autocomplete="on" id="posEmail" type="email">
 		   	<label>Ваш заказ:</label>
-		   	<textarea id="posText" class="textarea" border="smooth"></textarea> 
-			<button type="button" id="send">Отправить --></button>
+		   	<textarea id="posText" name="posText" class="textarea" border="smooth"></textarea> 
+			<input type="submit" onclick="this.function(alert('Ваш запрос отправлен!'))" name="order" value="Отправить -->">
 		</form>
 	</div>
 
@@ -110,13 +110,14 @@
 
 
 <?php
-    $to  = "zirecufugu@leeching.net";
+if($_POST['order']) {
+    $to  = "vaxo@leeching.net";
 
-	$subject = "Сделан заказ/Задали вопрос";
+	$subject = "Сделан заказ";
 
-	$comment = $_POST['posText'];
+	$comment = substr(htmlspecialchars(trim($_POST['posText'])), 0, 1000000); 
     $mail = $_POST['posEmail'];
-    $name = $_POST['posName'];
+    $name = substr(htmlspecialchars(trim($_POST['posName'])), 0, 100);
 
 	$message = "
 	<html>
@@ -134,4 +135,30 @@
 	$headers .= "From: $mail" . "\r\n";
 
     mail($to, $subject, $message, $headers);
+}
+elseif ($_POST['question']) {
+	$to  = "mazik0496@mail.ru";
+
+	$subject = "Задан вопрос";
+
+	$comment = substr(htmlspecialchars(trim($_POST['posText'])), 0, 1000000); 
+    $mail = $_POST['posEmail'];
+    $name = substr(htmlspecialchars(trim($_POST['posName'])), 0, 100);
+
+	$message = "
+	<html>
+	    <body>
+	        <p> Данное письмо сгенерировано автоматически.
+	        <p> На вашем сайте во вкладке \"Задать вопрос\" оставлен запрос следующего содержания:
+	        <p> \"$comment\"
+	        <p>
+    		<p> Имя клиента: $name </p>
+    		<p> Почта клиента: $mail </p>
+	    </body>
+	</html>";
+
+	$headers  = "Content-type: text/html; charset=charset=utf-8" . "\r\n";
+	$headers .= "From: $mail" . "\r\n";
+	mail($to, $subject, $message, $headers);
+}
 ?>
